@@ -1,0 +1,18 @@
+package ie.cct.gtp.robs.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(code = HttpStatus.UNAUTHORIZED)
+public class UnauthorizedException extends RuntimeException {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7994068322317758722L;
+
+	public UnauthorizedException(String message) {
+		super(message);
+	}
+	
+}
